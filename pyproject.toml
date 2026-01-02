@@ -1,0 +1,22 @@
+[project]
+name = "pizero-bikecomputer"
+version = "0.0.0"
+description = "An open-source bike computer based on Raspberry Pi Zero (W, WH, 2 W) with GPS and ANT+."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+  "aiofiles",
+  "aiohttp",
+  "crdp",
+  "cython",
+  "numpy",
+  "oyaml",
+  "pillow",
+  "polyline",
+  "pyqt6",
+  "pyqtgraph",
+  "qasync",
+]
+
+[tool.uv.sources]
+crdp = { git = "https://github.com/hishizuka/crdp.git" }
